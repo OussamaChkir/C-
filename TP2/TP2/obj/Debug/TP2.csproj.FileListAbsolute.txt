@@ -1,0 +1,10 @@
+C:\Users\oussa\source\repos\TP2\TP2\bin\Debug\TP2.exe.config
+C:\Users\oussa\source\repos\TP2\TP2\bin\Debug\TP2.exe
+C:\Users\oussa\source\repos\TP2\TP2\bin\Debug\TP2.pdb
+C:\Users\oussa\source\repos\TP2\TP2\obj\Debug\TP2.csprojAssemblyReference.cache
+C:\Users\oussa\source\repos\TP2\TP2\obj\Debug\TP2.Form1.resources
+C:\Users\oussa\source\repos\TP2\TP2\obj\Debug\TP2.Properties.Resources.resources
+C:\Users\oussa\source\repos\TP2\TP2\obj\Debug\TP2.csproj.GenerateResource.cache
+C:\Users\oussa\source\repos\TP2\TP2\obj\Debug\TP2.exe
+C:\Users\oussa\source\repos\TP2\TP2\obj\Debug\TP2.pdb
+C:\Users\oussa\source\repos\TP2\TP2\obj\Debug\TP2.FCompte.resources

@@ -1,0 +1,5 @@
+C:\Users\oussa\source\repos\Tp3\GestionDesEmployee\bin\Debug\GestionDesEmployee.dll
+C:\Users\oussa\source\repos\Tp3\GestionDesEmployee\bin\Debug\GestionDesEmployee.pdb
+C:\Users\oussa\source\repos\Tp3\GestionDesEmployee\obj\Debug\GestionDesEmployee.csprojAssemblyReference.cache
+C:\Users\oussa\source\repos\Tp3\GestionDesEmployee\obj\Debug\GestionDesEmployee.dll
+C:\Users\oussa\source\repos\Tp3\GestionDesEmployee\obj\Debug\GestionDesEmployee.pdb
