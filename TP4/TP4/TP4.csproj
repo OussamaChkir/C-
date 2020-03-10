@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4AC40296-8EFF-4488-AA3B-552879EE72C8}</ProjectGuid>
+    <ProjectGuid>{B22FE71D-B609-402D-9E09-BCD6F01C108B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Tp3</RootNamespace>
-    <AssemblyName>Tp3</AssemblyName>
+    <RootNamespace>TP4</RootNamespace>
+    <AssemblyName>TP4</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -52,20 +52,8 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListEmp.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ListEmp.Designer.cs">
-      <DependentUpon>ListEmp.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ListEmp.resx">
-      <DependentUpon>ListEmp.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -87,12 +75,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\GestionDesEmployee\GestionDesEmployee.csproj">
-      <Project>{d5f3f900-e8f4-4730-9365-39771f20e950}</Project>
-      <Name>GestionDesEmployee</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

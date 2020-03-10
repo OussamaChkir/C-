@@ -56,6 +56,7 @@
             this.Opt_C = new System.Windows.Forms.RadioButton();
             this.Opt_P = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.Btn_ListEmp = new System.Windows.Forms.Button();
             this.Dg_Emp = new System.Windows.Forms.DataGridView();
             this.Matricule = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -160,7 +161,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 18);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(727, 208);
+            this.groupBox1.Size = new System.Drawing.Size(727, 195);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Employé";
@@ -356,14 +357,25 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.Btn_ListEmp);
             this.groupBox2.Controls.Add(this.Dg_Emp);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(14, 236);
+            this.groupBox2.Location = new System.Drawing.Point(14, 219);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(724, 203);
+            this.groupBox2.Size = new System.Drawing.Size(724, 220);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Liste des Employés";
+            // 
+            // Btn_ListEmp
+            // 
+            this.Btn_ListEmp.Location = new System.Drawing.Point(263, 189);
+            this.Btn_ListEmp.Name = "Btn_ListEmp";
+            this.Btn_ListEmp.Size = new System.Drawing.Size(177, 30);
+            this.Btn_ListEmp.TabIndex = 1;
+            this.Btn_ListEmp.Text = "Liste des Employés";
+            this.Btn_ListEmp.UseVisualStyleBackColor = true;
+            this.Btn_ListEmp.Click += new System.EventHandler(this.Btn_ListEmp_Click);
             // 
             // Dg_Emp
             // 
@@ -376,7 +388,7 @@
             this.Salaire});
             this.Dg_Emp.Location = new System.Drawing.Point(17, 24);
             this.Dg_Emp.Name = "Dg_Emp";
-            this.Dg_Emp.Size = new System.Drawing.Size(693, 167);
+            this.Dg_Emp.Size = new System.Drawing.Size(693, 155);
             this.Dg_Emp.TabIndex = 0;
             // 
             // Matricule
@@ -465,6 +477,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Prénom;
         private System.Windows.Forms.DataGridViewTextBoxColumn DatedeNaissance;
         private System.Windows.Forms.DataGridViewTextBoxColumn Salaire;
+        private System.Windows.Forms.Button Btn_ListEmp;
     }
 }
 

@@ -10,3 +10,4 @@ C:\Users\oussa\source\repos\Tp3\Tp3\obj\Debug\Tp3.csproj.GenerateResource.cache
 C:\Users\oussa\source\repos\Tp3\Tp3\obj\Debug\Tp3.csproj.CopyComplete
 C:\Users\oussa\source\repos\Tp3\Tp3\obj\Debug\Tp3.exe
 C:\Users\oussa\source\repos\Tp3\Tp3\obj\Debug\Tp3.pdb
+C:\Users\oussa\source\repos\Tp3\Tp3\obj\Debug\Tp3.ListEmp.resources

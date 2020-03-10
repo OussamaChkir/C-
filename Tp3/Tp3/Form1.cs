@@ -13,13 +13,16 @@ namespace Tp3
 {
     public partial class Form1 : Form
     {
+        public static List<Patron> listPatron = new List<Patron>();
+        public static List<Cadre> listCadre = new List<Cadre>();
+        public static List<Ouvrier> listOuvrier = new List<Ouvrier>();
         public Form1()
         {
             InitializeComponent();
             grp_cad.Enabled = false;
             Grp_Ouv.Enabled = false;
             grp_pat.Enabled = false;
-
+          
         }
        
     private void label2_Click(object sender, EventArgs e)
@@ -30,19 +33,26 @@ namespace Tp3
 
         private void Btn_Ajout_Click(object sender, EventArgs e)
         {
+            
             if (string.IsNullOrEmpty(Txt_Mat.Text)||string.IsNullOrEmpty(Txt_Nom.Text)||string.IsNullOrEmpty(Txt_Pren.Text))
                 MessageBox.Show("champs matricule ou nom est vide !!");
             else
             {
-                Employe E;
+                
                 if (Opt_P.Checked)
                 {
-                    if(!string.IsNullOrEmpty(Txt_CA.Text) && !string.IsNullOrEmpty(Txt_Pour.Text)) { 
-                    E = new Patron(Convert.ToInt32(Txt_Mat.Text), Txt_Nom.Text, Txt_Pren.Text, Dat_Nais.Value.Date, Convert.ToInt32(Txt_CA.Text), Convert.ToInt32(Txt_Pour.Text));
-                        Dg_Emp.Rows.Add(E.Matricule, E.Nom, E.Prenom, E.Datenaissance.Date,E.GetSalaire());
+                    if (!string.IsNullOrEmpty(Txt_CA.Text) && !string.IsNullOrEmpty(Txt_Pour.Text))
+                    {
+                        Patron E;
+                        
+                        E = new Patron(Convert.ToInt32(Txt_Mat.Text), Txt_Nom.Text, Txt_Pren.Text, Dat_Nais.Value.Date, Convert.ToInt32(Txt_CA.Text), Convert.ToInt32(Txt_Pour.Text));
+                        Dg_Emp.Rows.Add(E.Matricule, E.Nom, E.Prenom, E.Datenaissance.Date, E.GetSalaire());
+                        listPatron.Add(E);
                     }
-                }else if (Opt_C.Checked)
-                { int ind=1;
+                }
+                else if (Opt_C.Checked)
+                {
+                    int ind = 1;
                     if (Ind1.Checked)
                         ind = 1;
                     else if (Ind2.Checked)
@@ -52,14 +62,22 @@ namespace Tp3
                     else if (Ind4.Checked)
                         ind = 4;
                     else
+                    {
                         MessageBox.Show("svp choisi un indice");
+                    }
+                   
+                    Cadre E;
+                    E = new Cadre(Convert.ToInt32(Txt_Mat.Text), Txt_Nom.Text, Txt_Pren.Text, Dat_Nais.Value, ind);
+                    Dg_Emp.Rows.Add(E.Matricule, E.Nom, E.Prenom, E.Datenaissance.Date, E.GetSalaire());
+                    listCadre.Add(E);
 
-                    E=new Cadre(Convert.ToInt32(Txt_Mat.Text), Txt_Nom.Text, Txt_Pren.Text, Dat_Nais.Value, ind);
-                    Dg_Emp.Rows.Add(E.Matricule, E.Nom, E.Prenom, E.Datenaissance.Date, E.GetSalaire());
-                }else if (Opt_O.Checked)
+                }
+                else if (Opt_O.Checked)
                 {
-                    E =new Ouvrier(Convert.ToInt32(Txt_Mat.Text), Txt_Nom.Text, Txt_Pren.Text, Dat_Nais.Value.Date, Dat_Ent.Value.Date);
+                    Ouvrier E;
+                    E = new Ouvrier(Convert.ToInt32(Txt_Mat.Text), Txt_Nom.Text, Txt_Pren.Text, Dat_Nais.Value.Date, Dat_Ent.Value.Date);
                     Dg_Emp.Rows.Add(E.Matricule, E.Nom, E.Prenom, E.Datenaissance.Date, E.GetSalaire());
+                    listOuvrier.Add(E);
                 }
 
             }
@@ -88,6 +106,15 @@ namespace Tp3
                 Grp_Ouv.Enabled = true;
             else
                 Grp_Ouv.Enabled = false;
+        }
+
+        private void Btn_ListEmp_Click(object sender, EventArgs e)
+        {
+            ListEmp f = new ListEmp();
+
+            f.ShowDialog();
+
+
         }
     }
 }
