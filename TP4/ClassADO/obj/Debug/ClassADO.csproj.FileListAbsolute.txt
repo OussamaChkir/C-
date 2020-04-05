@@ -1,0 +1,11 @@
+C:\Users\oussa\source\repos\TP4\ClassADO\bin\Debug\ClassADO.dll
+C:\Users\oussa\source\repos\TP4\ClassADO\bin\Debug\ClassADO.pdb
+C:\Users\oussa\source\repos\TP4\ClassADO\bin\Debug\Entities.dll
+C:\Users\oussa\source\repos\TP4\ClassADO\bin\Debug\MetroFramework.Design.dll
+C:\Users\oussa\source\repos\TP4\ClassADO\bin\Debug\MetroFramework.dll
+C:\Users\oussa\source\repos\TP4\ClassADO\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\oussa\source\repos\TP4\ClassADO\bin\Debug\Entities.pdb
+C:\Users\oussa\source\repos\TP4\ClassADO\obj\Debug\ClassADO.csprojAssemblyReference.cache
+C:\Users\oussa\source\repos\TP4\ClassADO\obj\Debug\ClassADO.csproj.CopyComplete
+C:\Users\oussa\source\repos\TP4\ClassADO\obj\Debug\ClassADO.dll
+C:\Users\oussa\source\repos\TP4\ClassADO\obj\Debug\ClassADO.pdb

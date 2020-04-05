@@ -1,0 +1,9 @@
+C:\Users\oussa\source\repos\TP4\Entities\bin\Debug\Entities.dll
+C:\Users\oussa\source\repos\TP4\Entities\bin\Debug\Entities.pdb
+C:\Users\oussa\source\repos\TP4\Entities\bin\Debug\MetroFramework.Design.dll
+C:\Users\oussa\source\repos\TP4\Entities\bin\Debug\MetroFramework.dll
+C:\Users\oussa\source\repos\TP4\Entities\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\oussa\source\repos\TP4\Entities\obj\Debug\Entities.csprojAssemblyReference.cache
+C:\Users\oussa\source\repos\TP4\Entities\obj\Debug\Entities.csproj.CopyComplete
+C:\Users\oussa\source\repos\TP4\Entities\obj\Debug\Entities.dll
+C:\Users\oussa\source\repos\TP4\Entities\obj\Debug\Entities.pdb

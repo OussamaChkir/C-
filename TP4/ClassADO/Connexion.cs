@@ -9,10 +9,11 @@ using Entities;
 
 namespace ClassADO
 {
-    class Connexion
+  public  class Connexion
     {
         public static SqlConnection cn;
-        public static string cnxstring = "Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=gestion;Integrated Security=True;Pooling=False";
+        public static string cnxstring = @"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=gestion;Integrated Security=True;Pooling=False";
+
         public static void Ouvrir()
         {
             cn = new SqlConnection();
@@ -21,6 +22,15 @@ namespace ClassADO
                 cn.ConnectionString = cnxstring;
                 cn.Open();
             }
+        }
+        public static void Close()
+        {
+            if (cn.State == ConnectionState.Open)
+            {
+               
+                cn.Close();
+            }
+
         }
     }
 }

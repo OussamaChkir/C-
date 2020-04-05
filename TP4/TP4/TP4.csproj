@@ -33,6 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,14 +55,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FCommande.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FCommande.Designer.cs">
+      <DependentUpon>FCommande.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListe_Cl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListe_Cl.Designer.cs">
+      <DependentUpon>FListe_Cl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListe_Prod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListe_Prod.Designer.cs">
+      <DependentUpon>FListe_Prod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FProduit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FProduit.Designer.cs">
+      <DependentUpon>FProduit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FCommande.resx">
+      <DependentUpon>FCommande.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListe_Cl.resx">
+      <DependentUpon>FListe_Cl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListe_Prod.resx">
+      <DependentUpon>FListe_Prod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FProduit.resx">
+      <DependentUpon>FProduit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -63,6 +111,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +124,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassADO\ClassADO.csproj">
+      <Project>{438af656-b45c-49ee-bb90-d9c140ebc6d5}</Project>
+      <Name>ClassADO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{0f9183fb-32f5-49b7-9b40-3f4f3ab9862e}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
