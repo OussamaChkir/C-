@@ -12,8 +12,8 @@ namespace ClassADO
   public  class Connexion
     {
         public static SqlConnection cn;
-        public static string cnxstring = @"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=gestion;Integrated Security=True;Pooling=False";
-
+         public static string cnxstring = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\oussa\source\repos\TP4\ClassADO\_DATABASE\gestion.mdf;Integrated Security=True";
+        //public static string cnxstring = @"Data Source=.\SQLEXPRESS;AttachDbFilename=" +System.IO.Path.GetDirectoryName(Application.ExecutablePath) +"\\gestion.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
         public static void Ouvrir()
         {
             cn = new SqlConnection();

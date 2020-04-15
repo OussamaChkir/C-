@@ -9,3 +9,5 @@ C:\Users\oussa\source\repos\TP4\ClassADO\obj\Debug\ClassADO.csprojAssemblyRefere
 C:\Users\oussa\source\repos\TP4\ClassADO\obj\Debug\ClassADO.csproj.CopyComplete
 C:\Users\oussa\source\repos\TP4\ClassADO\obj\Debug\ClassADO.dll
 C:\Users\oussa\source\repos\TP4\ClassADO\obj\Debug\ClassADO.pdb
+C:\Users\oussa\source\repos\TP4\ClassADO\bin\Debug\_DATABASE\gestion.mdf
+C:\Users\oussa\source\repos\TP4\ClassADO\bin\Debug\_DATABASE\gestion_log.ldf
